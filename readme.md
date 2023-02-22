@@ -15,12 +15,12 @@ It is built for an interview process.
 
 ## Installation
 
-To Test smart contract in Hardhat :
+To test smart contract in Hardhat :
 
 - Run `npm i` and `npx hardhat test --network hardhat`
   inside `/testing` <br/>
 
-To Try the live version in BSC testnet in the front -end :<br/>
+To try the live UI version in BSC testnet in localhost :<br/>
 
 - Run `npm i` and `npm start` inside `/Front-End`
 
