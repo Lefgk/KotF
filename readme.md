@@ -9,6 +9,7 @@ It is built for an interview process.
   - [Create a new project](#Create-a-new-project)
   - [Installation](#Installation)
   - [Links](#Links)
+  - [Gas Savings](#Gas-Savings)
   - [Contributing](#Contributing)
   - [Tips](#Tips)
 
@@ -28,6 +29,10 @@ To try the live UI version in BSC testnet in localhost :<br/>
 
 If you don't want to run locally, you may try a live version [Live in BSC Testnet](https://main--spectacular-rolypoly-086e84.netlify.app/).
 
+## Gas Savings
+The contract has been optimised to save gas during deploying and runtime with the use of custom errors.
+
+<img width="741" alt="image" src="https://user-images.githubusercontent.com/37511853/220705142-810b9473-b17e-4573-9ba7-9cc94d8920c1.png">
 ## Contributing
 
 You're more than welcome to contribute! For help you can start by creating a CONTRIBUTING.md file.
