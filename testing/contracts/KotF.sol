@@ -5,28 +5,30 @@ contract KotF {
     address payable public currentFool;
     uint256 public currentPrice;
 
-    event NewFool(address newfool, uint256 newprice);
+    error Unauthorized();
+    error WrongValue();
+    error FailedEtherTransfer();
+
+    event NewFool(address indexed newfool, uint256 indexed newprice);
 
     /**
      * @notice handle accidental Ether sent to this contract
      */
     receive() external payable {
-        revert("Did you mean to BecomeFool?");
+        revert Unauthorized();
     }
 
     /**
      * @notice function to become next fool
      */
-    function BecomeFool() public payable {
-        if (currentFool == address(0)) {
-            require(msg.value > 0, "Ether amount sent is wrong");
+    function BecomeFool() external payable {
+        if (currentPrice == 0) {
+            if (msg.value == 0) revert FailedEtherTransfer();
         } else {
-            require(
-                2 * msg.value >= currentPrice * 3,
-                "Ether amount not enough"
-            );
+            if (2 * msg.value < currentPrice * 3) revert WrongValue();
+
             (bool sent, ) = address(currentFool).call{value: msg.value}("");
-            require(sent, "Failed to send Ether");
+            if (!sent) revert FailedEtherTransfer();
         }
         currentFool = payable(msg.sender);
         currentPrice = msg.value;

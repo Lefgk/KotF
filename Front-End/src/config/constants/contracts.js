@@ -2,6 +2,6 @@
 
 export default {
   contract: {
-    97: "0x789A3bfA9BE37cB5794313De62E3F92390f8A34B",
+    97: "0xe57d4B42b9f4a46C37C1D4f4C70f15F074794eb9",
   },
 };

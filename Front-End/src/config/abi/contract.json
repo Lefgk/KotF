@@ -7,16 +7,31 @@
     "type": "function"
   },
   {
+    "inputs": [],
+    "name": "FailedEtherTransfer",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "Unauthorized",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "WrongValue",
+    "type": "error"
+  },
+  {
     "anonymous": false,
     "inputs": [
       {
-        "indexed": false,
+        "indexed": true,
         "internalType": "address",
         "name": "newfool",
         "type": "address"
       },
       {
-        "indexed": false,
+        "indexed": true,
         "internalType": "uint256",
         "name": "newprice",
         "type": "uint256"

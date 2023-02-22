@@ -2,8 +2,8 @@
   "_format": "hh-sol-cache-2",
   "files": {
     "/Users/lefg/Documents/GitHub/KotF/testing/contracts/KotF.sol": {
-      "lastModificationDate": 1677075898478,
-      "contentHash": "3702796079891ba1e4325f0b54057229",
+      "lastModificationDate": 1677078913182,
+      "contentHash": "506332064ad36a05e41c00e5b6b9faf1",
       "sourceName": "contracts/KotF.sol",
       "solcConfig": {
         "version": "0.8.17",

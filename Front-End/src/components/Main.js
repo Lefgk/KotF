@@ -56,6 +56,10 @@ export default function App() {
   };
   return (
     <>
+      <div style={{ textAlign: "center", color: "red" }}>
+        Dapp available in BSC Testnet only
+      </div>
+      <br />
       <Profile />
       <br />
       Current Fool : {fool} <br />
