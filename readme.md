@@ -1,5 +1,8 @@
 # King of The Fool
 
+This repo contains the main features of the King of the Fool dapp.
+It is built for an interview process.
+
 # Table of Contents
 
 - [Table of Contents](#table-of-contents)
@@ -9,8 +12,6 @@
   - [Contributing](#Contributing)
   - [Tips](#Tips)
 
-This repo contains the main features of the King of the Fool dapp.
-It is built for an interview process.
 
 ## Installation
 
